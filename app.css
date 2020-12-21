@@ -1,0 +1,52 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Flamenco', cursive;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: lighter;
+    text-decoration: underline;
+}
+
+p {
+    color: white;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/demo.jpg');
+    /* background-image: url('./images/demo1.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.colorChange {
+    animation: colorChange 1s infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        color: red;
+    }
+    25% {
+        color: green;
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        color: blue;
+    }
+}
